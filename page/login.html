@@ -1,0 +1,434 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            border: 0;
+            font-family: sans-serif;
+
+        }
+
+        .container{
+                margin: 0 auto;
+                max-width: 1200px;
+        }
+
+    body{
+        background-image: url(/img/background-image.avif);
+        background-size: 100%;
+    }
+    /* HEADER CSS */
+
+    .header{
+        height: 120px;
+        display: flex;
+        position: relative;
+        
+        
+    }
+    .nav{
+        height: 700px;
+    }
+    .section-1{
+        height: 300px;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .header .logo-header {
+        width: 25%;
+    }
+    .header .menu-header{
+        width: 50%;
+    
+        
+
+        
+    }
+    .header .menu-header ul{
+    
+        list-style: none;
+        display: flex;
+        transition: all 0.3 ease-in;
+        padding-left: 12%;
+        
+    }
+    .header .menu-header ul a {
+
+        padding: 0 12px;
+        text-decoration: none;
+        line-height: 100px;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(65, 5, 60);    
+        transition: 0.7s;
+        
+    }
+    .header .menu-header ul a:hover {
+        border-bottom: 5px solid rgb(161, 127, 127);
+        font-size: 25px;
+        color: rgb(180, 13, 97);
+        transition: 0.7s;
+    }
+
+    .logo-header img{
+        margin-top: 20px;
+        width: 100px;
+        left: 0;
+        border-radius: 20px;
+    }
+    .header .sign-up{
+        width: 25%;
+        
+    }
+    .header .sign-up input:hover{
+        transition: 0.8s;
+        font-size: 16px;
+    }
+    .sign-up input{
+        
+        padding: 12px 16px;
+        position: absolute;
+        right: 100px;
+        bottom: 30%;
+        color: aliceblue;
+        background-color: rgb(36, 28, 28);
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+
+    /* END HEADER    */
+        .login{
+            margin: 0 auto;
+            box-shadow: 0px 0px 5px black;
+            display: flex;
+            max-width: 1200px;
+            
+            
+        }
+        .left-item{
+            width: 50%;
+            width: 658px;
+            height: 675px;
+            background-image: url(/img/gradient-dynamic-blue-lines-background_23-2148995756.avif);
+            float: left;
+            position: relative;
+            color: aliceblue;
+        }
+        .left-item .title-top {
+            position: absolute;
+            left: 30px;
+            top: 20px;
+        }
+        .left-item> .sub-title-center{
+            text-align: center;
+            margin-top: 280px;
+            
+        }
+        .left-item .title-center {
+            text-align: center;
+        }
+        .left-item .text-title{
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .right-item{
+            width: 50%;
+            background-color: bisque;
+            float: left;
+            width: 658px;
+            height: 675px;
+            text-align: center;
+            background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+            
+        }
+        .right-item .title{
+            margin-top: 180px;
+            color: rgb(14, 134, 240);
+        }
+        .right-item .sub-title{
+            color: rgb(144, 29, 29);
+        }
+        .right-item .form-login{
+            padding-top: 40px;
+    
+        }
+        .right-item .form-login input {
+            padding: 10px;
+            width: 400px;    
+
+        }
+
+        .right-item .form-login .box-1{
+            margin-bottom: 14px;
+            background-color: rgb(242, 237, 229);
+            border-left: solid 3px blue;
+        }
+        .right-item .form-login .box-2{
+            background-color: rgb(242, 237, 229);
+            padding-top: 10px;
+            border-left: solid 3px blue;
+        }
+        .right-item .text-keep {
+            margin-top: 10px;   
+            position: relative;
+            right: 0;
+
+
+        }
+        .right-item .text-keep .left{
+            position: absolute;
+            width: 50%;
+            left: 24px;
+        }
+        .right-item .text-keep .right{
+            width: 50%;
+            position: absolute;
+            right: 24px;
+
+        }
+        .right-item .text-keep .right a{
+            text-decoration: none;
+        }
+        .bottom-subscribe{
+            padding-top: 48px;
+        }
+        .right-item .bottom-subscribe input{
+            padding: 14px 100px;
+            border-radius: 15px;
+            color: aliceblue;
+            background-color: rgb(53, 53, 206);
+            font-weight: bold;
+            transition: all 0.9s linear;    
+        }
+        .right-item .bottom-subscribe input:hover{
+            background-color: aqua;
+            color: rgb(56, 50, 50); 
+            font-weight: bold;
+
+        }
+        .footer{
+        height: 300px;
+        display: flex;
+        border: 10px 10px 10px;
+        max-width: 1200px;
+        margin: 30px auto 0 auto;
+        }
+        .footer ul li {
+            list-style: none;
+            padding: 4px 0;
+        }
+        .footer ul li a {
+            text-decoration: none;
+            color: rgba(27, 2, 15, 0.8);
+        }
+        .footer ul li a:hover{  
+            color: rgb(133, 88, 88);
+            border-bottom: solid 2px black;
+        }   
+        .footer .column-1,
+        .footer .column-2,
+        .footer .column-3,
+        .footer .column-4,      
+        .footer .column-5{
+            width: 18%;
+            padding-top: 4px ;
+            padding-left: 120px;
+        }
+        .footer .title {
+            color: rgb(65, 60, 55);
+            padding-bottom: 8px;
+            font-weight: bold;
+            
+        }
+        .footer .title p{
+            transition: all 0.3s linear;
+        }
+        .footer .title p:hover{
+            color: #371274;
+            border-left: solid 2px red;
+            padding-left: 2px;
+            
+        }
+
+        .footer .app{
+            padding-left: 40px;
+            padding-top: 40px ;
+        }
+        .footer .app .title-app{
+            font-weight: bold;
+        }
+        .footer .app img{
+            padding-top: 20px;
+            width: 140px;
+        }
+    </style>
+    <body>
+        <div class="container">
+                <div class="header">
+                    <div class="logo-header">
+                        <img src="/img/geometric-robot-transporter-large.gif" alt="logo">
+                    </div>
+                    <div class="menu-header">
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/page/about.html">About</a></li>
+                            <li><a href="">Resources</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="sign-up">
+                        <a href="/page/login.html"><input class="login" type="button" value="Sign up"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="login">
+                <div class="left-item">
+                    <div class="title-top">
+                        <p>COMPANY NAME</p>
+                    </div>
+                    <div class="sub-title-center">
+                        <p>Nice see you again</p>
+                    </div>
+                    <div class="title-center">
+                        <h1>WELCOME BACK</h1>
+                    </div>
+                    <div class="text-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        blanditiis earum odio libero sit, tempore minima est asperiores dolore ut. 
+                    </div>
+                </div>
+                <div class="right-item">
+                    <div class="title">
+                        <h1>LOGIN ACCOUNT</h1>
+                    </div>
+                    <div class="sub-title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        blanditiis earum odio libero sit, tempore minima est asperiores dolore ut. 
+                    </div>
+                    <div class="form-login">
+                        <input class="box-1" type="text" id="" placeholder="Email ID"><br>
+                        <input class="box-2" type="text" id="" placeholder="Password"><br>
+                    </div>
+                    <div class="text-keep">
+                        <div class="left">
+                            <input type="checkbox">
+                            Keep me signed in
+                        </div>
+                        <div class="right">
+                            <a href="#">Already a member?</a>
+                        </div>
+        
+                    </div>
+                    <div class="bottom-subscribe" >
+                        <input class="login" type="button" value="Subscribe">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+
+            <div class="footer">
+                <div class="column-1">
+                    <div class="title">
+                            <p>Product</p>
+                    </div>
+                    <ul>
+                        <li><a href="">Overview</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Solutinos</a></li>
+                        <li><a href="">Tutorials</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Releases</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="column-2">
+                    <div class="title">
+                            <p>Company</p>
+                    </div>
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Media kit</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    
+                </div>
+        
+                <div class="column-3">
+                    <div class="title">
+                            <p>Resources</p>
+                    </div>
+                    <ul>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Newsletter</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Help center</a></li>
+                        <li><a href="">Tutorials</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                    
+                </div>
+        
+                <div class="column-4">
+                    <div class="title">
+                            <p>Social</p>
+                    </div>
+                    <ul>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Linkedln</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Githuhb</a></li>
+                        <li><a href="">AngeList</a></li>
+                        <li><a href="">Dribble</a></li>
+                    </ul>
+                    
+                </div>
+        
+                <div class="column-5">
+                    <div class="title">
+                            <p>Legal</p>
+                    </div>
+                    <ul>
+                        <li><a href="">Term</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Cookies</a></li>
+                        <li><a href="">Licenses</a></li>
+                        <li><a href="">Settings</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    
+                </div>
+        
+                <div class="app">
+                        <div class="title-app">
+                            Get the app
+                        </div>
+                        <div class="ch-play">
+                            <a href="#"><img src="/img/googleplay.png" alt="Chplay"></a>
+                        </div>
+                        <div class="app-store">
+                            <a href="#"><img src="/img/appstore.png" alt="Appstore"></a>
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </body>
+    </html>
