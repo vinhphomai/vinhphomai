@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY DOMAINS</title>
+    <title>Cart Product</title>
     <link rel="shortcut icon" href="https://img.freepik.com/free-vector/www-icon_23-2147934051.jpg?w=740&t=st=1676834757~exp=1676835357~hmac=5eed4b25ed407f253a1c1d71f9e2ed94872a7ae63d518bee13a6077777db8d74">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -14,16 +14,14 @@
         padding: 0;
         border: 0;
         font-family: sans-serif;
-
     }
-
     .container{
             margin: 0 auto;
             max-width: 1200px;
     }
 
 body{
-    background: linear-gradient(#c36c6c, #9198e5);
+    background: linear-gradient(#ac9090, #e9eaeb);
     background-size: 100%;
 }
 /* HEADER CSS */
@@ -32,7 +30,6 @@ body{
     height: 120px;
     display: flex;
     position: relative;
-    margin-right: 30px;
     
     
 }
@@ -48,11 +45,7 @@ body{
     width: 25%;
 }
 .header .menu-header{
-    width: 55%;
-
-    
-
-    
+    width: 55%;   
 }
 .header .menu-header ul{
 
@@ -165,130 +158,143 @@ body{
         padding-top: 20px;
         width: 140px;
     }
-    .item-picture{
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr  ;
-        grid-template-rows: 40px 50px 30px 80px 60px 40px ;
+
+
+    .shop-cart {
+        display: flex;
         margin: 0 auto;
         max-width: 1200px;
-        
     }
-    .item{
-        border-radius: 10px;
+    .left-cart{
+        width: 50%;
+        margin-top: 38px;
     }
-    .item:hover{
-        box-shadow: 0 0  15px rgb(75, 50, 50);
-        transition: all 0.2s linear;
+    .right-cart{
+        width: 50%;
     }
-    .item-picture .box-1{
-        background-image: url(https://images.pexels.com/photos/12476876/pexels-photo-12476876.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
-        grid-row: 3/6;
-        background-size: 320px;
-
-    }
-    .item-picture .box-2{
-        background-size: 240px;
-
-        grid-row: 2/4;
-        background-color: rgb(116, 83, 40);
-        background-image: url(https://images.pexels.com/photos/15273819/pexels-photo-15273819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    }
-    .item-picture .box-3{
-        grid-row: 1/8;
-        background-color: rgb(29, 66, 109);
-        object-fit: cover;
-        background-image: url(https://img.freepik.com/free-photo/vertical-shot-vietnamese-girl-standing-train-tracks-old-bridge_181624-22135.jpg?w=360&t=st=1676863016~exp=1676863616~hmac=2cd031a4146bf6394a3029266bf9a414ef484c6c68af996d06159bb54c48666d)
-    }
-    .item-picture .box-4{
-        background-size: 240px;
-        background-color: rgb(6, 12, 20);
-        grid-row: 2/5;
-        background-image: url(https://images.pexels.com/photos/15550234/pexels-photo-15550234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    }
-    .item-picture .box-5{
-        background-size: 250px;
-        background-image: url(https://images.pexels.com/photos/15548415/pexels-photo-15548415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-        grid-row: 3/6;
-        background-repeat: no-repeat;
-        background-color: rgb(146, 21, 31);
-    }
-    .item-picture .box-6{
-        grid-row: 4/7;
-        background-color: rgb(9, 233, 233);
-        background-image: url(https://images.pexels.com/photos/14653965/pexels-photo-14653965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-        background-position: center center;
-        background-size: 180px;
-    }
-    .item-picture .box-7{
-       object-fit:contain;
-        background-color: rgb(48, 23, 7);
-        grid-row: 5/7;
-        background-size: 240px;
-        background-image: url(https://images.pexels.com/photos/15582409/pexels-photo-15582409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    }
-    .about-section .title{
-        margin: 0 auto;
-        max-width: 1200px;
+    .left-cart .img-product{
         text-align: center;
-        font-size: 20px;
+    
+    }
+    .left-cart .img-product img{
+        width: 412px;  
+    }
+    .sub-img-product{
+        text-align: center;
+       
+    }
+    .sub-img-product img {
+        width: 100px;
 
     }
-    .about-section{
-        position: relative;
-    }
-    .right-toptext{
-        position: absolute;
-        top: 100px;
-        left: 250px;
-        letter-spacing:1px;
-    }
-    .right-toptext .text{
-        font-weight: bold;
-        padding-top: 20px;
-    }
-    .left-bottom-text{
-        position: absolute;
-        left: 250px;
+    .right-cart .sub-product {
         
     }
-    .left-bottom-text .icon {
+    .right-cart .rate-product{
+        padding: 10px 0;
+    }
+    .right-cart .rate-product{
+        
+    }
+    .right-cart .title-price{
+        padding-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 8px;
+    }
+    .right-cart .sub-price {
+        padding-bottom: 10px;
+    }
+    .quantity {
+        display: flex;
+    }
+    .buy-addcart{
+        display: flex;
+    }
+    .price {
+        width: 400px;
+        border-top: solid 1px rgb(161, 161, 161);
+    }
+    .choose-color {
+    }
+    .choose-color .title-color p{
+        font-weight: bold;
+
+    }
+    .choose-color .item-color{
+        margin-bottom: 8px
+    }
+    .choose-color .item-color i {
         font-size: 40px;
+
     }
-    .down-scroll{
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 40px;
-        cursor: pointer;
+    .choose-color .item-color i :hover{
+        border: solid 2px blue;
     }
-    .down-scroll button{
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0 0 4px rgb(40, 35, 35);
-        cursor: pointer;
-        transition: all 0.5s linear;
+    
+    .right-cart .quantity .quantity-1{
+        padding: 0 15px;
+        background-color: #bdb7c5;
+        border-radius: 20px;
+    }
+    .right-cart .quantity .quantity-1 i {
+        padding: 8px;
+        line-height: 30px;
         font-weight: bold;
+        color: rgb(30, 53, 7);
     }
-    .down-scroll button:hover{
-        color: rgb(31, 78, 78);
-        font-weight: bold;
-        box-shadow: 0 0 5px rgb(0,140,255),
-              0 0 25px rgb(0,140,255),
-              0 0 50px rgb(0,140,255),
-              0 0 100px rgb(0,140,255);
+    .right-cart .quantity .sub-quantity {
+        padding-left: 30px;
     }
-    .right-bottom-text{
-        position: absolute;
-        right: 350px;
-        bottom: 4px;
-    }
-    .right-bottom-text .text{
+    .buy-addcart{
         margin-top: 10px;
     }
-    .right-bottom-text .icon {
-        font-size: 40px;
-        color: rgb(36, 10, 78);
+    .buy-addcart .buy{
+
     }
+    .buy-addcart .buy button {
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: solid 1px green;
+        transition: all 0.2s linear;
+        
+    }
+    .buy-addcart .add-to-cart {
+        padding-left: 10px;
+    }
+    .buy-addcart .add-to-cart button {
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: solid 1px green;
+        transition: all 0.2s linear;
+    }
+    .buy-addcart .buy button:hover,
+    .buy-addcart .add-to-cart button:hover{
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+    .shipping{
+        margin-top: 8px;
+        width: 350px;
+        box-shadow: 0 0 3px rgb(73, 69, 69);
+    }
+    .shipping .ship-1{
+       padding: 10px;
+       border-bottom: solid 1px #28262b ;
+       
+    }
+    .name-ship{
+        font-weight: bold;
+        padding-bottom: 4px;
+    }
+    .sub-ship a{
+        color: #28262b;
+    }
+    .shipping .ship-2{
+        padding: 10px;
+    }
+
+
 </style>
 <body>
     <div class="container">
@@ -300,7 +306,7 @@ body{
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
-                        <li><a href="#">Resources</a></li>
+                        <li><a href="">Resources</a></li>
                         <li><a href="./product.html">Products</a></li>
                         <li><a href="./mydomain.html">My Domain</a></li>
                     </ul>
@@ -311,70 +317,96 @@ body{
                 
             </div>
         </div>
-            <!-- END HEADER -->
-        <div class="about-section">
-            <div class="title">
-                <h1>Make Your Fashion Look <br>
-                More Charming</h1>
-            </div>
-            <div class="right-toptext">
-                <div class="subtext">
-                Summber Collection
+        <!-- END HEADER -->
+        <div class="shop-cart">
+            <div class="left-cart">
+                <div class="img-product">
+                    <img src="../img/headphone-1.png" alt="anh san pham">
                 </div>
-                <div class="text">
-                    TRANDY AND <br>
-                    CLUSSI FOR <br>
-                    NEW SEASSON
+                <div class="sub-img-product">
+                    <img src="../img/headphone-2.png" alt="anh san pham">
+                    <img src="../img/headphone-3.png" alt="anh san pham">
+                    <img src="../img/img5.png" alt="anh san pham">
+                    <img src="../img/img6.png" alt="anh san pham">
                 </div>
             </div>
-            <div class="item-picture">
-                <div class="box-1 item">
-                    
+            <div class="right-cart">
+                    <div class="name-product">
+                        <h1>Airpods - Max</h1>
+                    </div>
+                    <div class="sub-product">
+                        a perfect balance of exhilarating high-fidelity audio and the <br>
+                        effortiless magic of Airpods
+                    </div>
+                    <div class="rate-product">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        (121)
+                    </div>              
+                <div class="price">
+                    <div class="title-price">
+                        $549.00 or 99.99/month
+                    </div>
+                    <div class="sub-price">
+                        Suggested payments with 6 months special financing
+                    </div>
                 </div>
-                <div class="box-2 item">
-                    
+               
+                <div class="choose-color">
+                    <div class="title-color">
+                        <p>Choose a Color</p>
+                    </div>
+                    <div class="item-color">
+                        <i style="color: red;" class='bx bxs-circle' ></i>
+                        <i style="color: rgb(16, 14, 131);" class='bx bxs-circle' ></i>
+                        <i style="color: rgb(11, 124, 7);" class='bx bxs-circle' ></i>
+                        <i style="color: rgb(188, 190, 35);" class='bx bxs-circle' ></i>
+                        <i style="color: rgb(156, 23, 101);" class='bx bxs-circle' ></i>
+                    </div>
                 </div>
-                <div class="box-3 item">
-
+                <div class="quantity">
+                    <div class="quantity-1">
+                        <i class='bx bx-plus'></i>  
+                        1
+                        <i class='bx bx-minus' ></i>
+                    </div>
+                    <div class="sub-quantity">
+                        Only <strong style="color: rgb(66, 66, 18);">12 Items</strong> Left! <br>
+                        Don't miss it
+                    </div>
                 </div>
-                <div class="box-4 item">
-                    
+                <div class="buy-addcart">
+                    <div class="buy">
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="add-to-cart">
+                        <button>Add to Cart</button>
+                    </div>
                 </div>
-                <div class="box-5 item">
-                    
-                </div>
-                <div class="box-6 item">
-                    
-                </div>
-                <div class="box-7 item">
-                    
+                <div class="shipping">
+                    <div class="ship-1">
+                        <div class="name-ship">
+                            <i  style="color: rgb(185, 185, 19);" class='bx bxs-car'></i>
+                            Free Delivery
+                        </div>
+                        <div class="sub-ship">
+                            <a href="#">Enter you Postal code for Delivery Avaliabitty</a>
+                        </div>
+                    </div>
+                    <div class="ship-2">
+                        <div class="name-ship">
+                            <i style="color: rgb(185, 185, 19);" class='bx bxs-calendar-star' ></i>
+                            Return Delivery
+                        </div>
+                        <div class="sub-ship">
+                            Free 30day's Delivery Returns. <a href="#">Details</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="left-bottom-text">
-                <div class="icon">
-                    <i class='bx bxs-heart-circle'></i>
-                </div>
-                I'm verymuch of the buy less but buy <br>
-                better persuasion but never really knew <br>
-                where to look
-            </div>
-            <div class="down-scroll">
-                <button>SCROLL DOWN  <i class='bx bxs-down-arrow'></i> </button>
-            </div>
-            <div class="right-bottom-text">
-                <div class="icon">
-                    <i class='bx bxs-calendar-alt' ></i>
-                </div>
-                <div class="sub-text">
-                    31 May 2022
-                </div>
-                <div class="text">
-                    Always be strong <br>
-                    and have valus
-                </div>
-            </div>
-
-
         </div>
         <!-- FOOTER -->
 
